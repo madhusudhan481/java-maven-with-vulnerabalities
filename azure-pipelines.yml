@@ -23,4 +23,5 @@ steps:
 - task: synopsys-polaris-task@1
   inputs:
     polarisService: 'Polaris SIPSE'
-    polarisCommand: 'analyze'
+    polarisCommand: 'analyze -w'
+    waitForIssues: true
