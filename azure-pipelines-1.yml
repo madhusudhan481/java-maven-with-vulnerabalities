@@ -20,7 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: synopsys-polaris-task@1
+- task: SynopsysPolaris@1
   inputs:
     polarisService: 'Polaris SIPSE'
     polarisCommand: 'analyze -w'
