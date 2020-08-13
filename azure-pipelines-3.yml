@@ -23,4 +23,5 @@ steps:
 - task: SynopsysPolaris@1
   inputs:
     polarisService: 'Polaris SIPSE'
-    polarisCommand: '--co "project.name=\"Prod_Test_1\"" analyze -w'
+    polarisCommand: '--co "project.name=\"Linux_Testing_prod\"" analyze -w'
+    waitForIssues: true
